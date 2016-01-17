@@ -58,3 +58,5 @@ java/*.iml
 java/target
 **/*.pyc
 .idea
+rust/Cargo.lock
+rust/target/

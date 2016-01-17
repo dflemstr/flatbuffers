@@ -71,9 +71,13 @@ const Generator generators[] = {
     flatbuffers::IDLOptions::kMAX,
     "Generate Python files for tables/structs",
     flatbuffers::GeneralMakeRule },
-    { flatbuffers::GeneratePhp, nullptr, "--php", "PHP",
+  { flatbuffers::GeneratePhp,      nullptr, "--php", "PHP",
     flatbuffers::IDLOptions::kMAX,
     "Generate PHP files for tables/structs",
+    flatbuffers::GeneralMakeRule },
+  { flatbuffers::GenerateRust,     "-r", "--rust", "Rust",
+    flatbuffers::IDLOptions::kMAX,
+    "Generate Rust files for tables/structs",
     flatbuffers::GeneralMakeRule },
 };
 
